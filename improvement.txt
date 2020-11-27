@@ -1,0 +1,8 @@
+// Constants used to simplify the job of finding all legal neighbors
+final int[] RDELTA = {-1, -1, -1, 0, 0, 1, 1, 1};
+final int[] CDELTA = {-1, 0, 1, -1, 1, -1, 0, 1};
+// ...
+for (int i = 0; i < RDELTA.length; i++) { 
+  searchFromLocation(board, lex, row + RDELTA[i], col + CDELTA[i], cells, 
+                     word, words);
+}
